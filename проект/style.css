@@ -1,6 +1,7 @@
 html, 
 body {
     height: 100%;
+
 }
 
 body {
@@ -16,7 +17,8 @@ audio {
 
 video {
     border: 1px solid #aaa;
-    object-fit: initial;
+  
+
  }
  ::cue {
     font-size: 12px;
