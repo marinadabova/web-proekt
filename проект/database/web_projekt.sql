@@ -2,10 +2,10 @@
 -- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
--- Хост: 127.0.0.1
--- Време на генериране: 11 юни 2022 в 19:59
--- Версия на сървъра: 10.4.22-MariaDB
--- Версия на PHP: 8.1.2
+-- Host: 127.0.0.1
+-- Generation Time: Jun 11, 2022 at 10:16 PM
+-- Server version: 10.4.22-MariaDB
+-- PHP Version: 8.1.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- База данни: `web_projekt`
+-- Database: `web_projekt`
 --
 
 -- --------------------------------------------------------
 
 --
--- Структура на таблица `db`
+-- Table structure for table `db`
 --
 
 CREATE TABLE `db` (
@@ -36,11 +36,11 @@ CREATE TABLE `db` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Схема на данните от таблица `db`
+-- Dumping data for table `db`
 --
 
 INSERT INTO `db` (`id`, `name`, `location`, `subs_name`, `subs_location`) VALUES
-(1, 'The Three Billy Goats Gruff', 'videos/The Three Billy Goats Gruff.mp4', 'The Three Billy Goats Gruff.vtt', '..subtitles/The Three Billy Goats Gruff.vtt'),
+(1, 'The Three Billy Goats Gruff', 'videos/The Three Billy Goats Gruff.mp4', 'The Three Billy Goats Gruff.vtt', '../subtitles/The Three Billy Goats Gruff.vtt'),
 (2, 'Bedtime for Gus', 'videos/Bedtime for Gus.mp4', 'Bedtime-For-Gus.vtt', '../subtitles/Bedtime-For-Gus.vtt');
 
 --
@@ -48,7 +48,7 @@ INSERT INTO `db` (`id`, `name`, `location`, `subs_name`, `subs_location`) VALUES
 --
 
 --
--- Индекси за таблица `db`
+-- Indexes for table `db`
 --
 ALTER TABLE `db`
   ADD PRIMARY KEY (`id`);
