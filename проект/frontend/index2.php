@@ -5,6 +5,7 @@ include("../config.php");
     
 <html>
     <head>
+        <title> Video Anotation</title>
         <link rel="stylesheet" href="./style.css">
         <p id="txt"></p>
         <h1>The Three Billy Goats Gruff</h1>
@@ -28,7 +29,7 @@ include("../config.php");
         echo 
         "<div class=\"vd\">
         <h1>".$name."</h1>
-        <video src='../".$location."' controls width='320px' height='320px' >
+        <video  src='../".$location."' controls width='320px' height='320px' >
             <track src='../".$subs_name."' kind=\"subtitles\" srclang=\"en\" label=\"English\" default> 
         </video>
             <br>

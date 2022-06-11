@@ -13,7 +13,7 @@ if(isset($_POST['but_upload'])){
        $extension = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 
        // Valid file extensions
-       $extensions_arr = array("vtt");
+       $extensions_arr = array("vtt,srt");
 
        // Check extension
        if( in_array($extension,$extensions_arr) ){
