@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Време на генериране: 11 юни 2022 в 15:07
+-- Време на генериране: 11 юни 2022 в 17:01
 -- Версия на сървъра: 10.4.22-MariaDB
 -- Версия на PHP: 8.1.2
 
@@ -38,8 +38,8 @@ CREATE TABLE `db` (
 --
 
 INSERT INTO `db` (`id`, `name`, `location`) VALUES
-(1, 'video1.mp4', 'videos/video1.mp4'),
-(2, 'video2.mp4', 'videos/video2.mp4');
+(1, 'The Three Billy Goats Gruff', 'videos/The Three Billy Goats Gruff.mp4'),
+(2, 'Bedtime for Gus', 'videos/Bedtime for Gus.mp4');
 
 --
 -- Indexes for dumped tables
