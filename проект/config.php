@@ -6,6 +6,8 @@ $host = "localhost";
 $user = "root"; 
 $password = ""; 
 $dbname = "web_projekt"; 
+//$dbname = "test_subs"; 
+
 
 $con = mysqli_connect($host, $user, $password,$dbname);
 if (!$con) {

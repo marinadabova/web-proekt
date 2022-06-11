@@ -6,7 +6,7 @@ if(isset($_POST['but_upload'])){
    $maxsize = 26214400; // 25MB
    if(isset($_FILES['file']['name']) && $_FILES['file']['name'] != ''){
        $name = $_FILES['file']['name'];
-       $target_dir = "subtitles/";
+       $target_dir = "../subtitles/";
        $target_file = $target_dir . $_FILES["file"]["name"];
 
        // Select file type
