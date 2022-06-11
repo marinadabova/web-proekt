@@ -45,7 +45,8 @@ if(isset($_POST['but_upload'])){
     
 <html>
     <head>
-      <style src="./style.css"></style>
+        <link rel="stylesheet" href="./style.css">
+
       <video controls >
        <source type="video/mp4" src="../The Three Billy Goats Gruff _ Fairy Tales _ Gigglebox.mp4">
             <track src="../goats.vtt" kind="subtitles" srclang="en" label="English" default> 
@@ -94,7 +95,7 @@ if(isset($_POST['but_upload'])){
         $location = $row['location'];
         $name = $row['name'];
         echo "<div style='float: left; margin-right: 5px;'>
-            <video src='".$location."' controls width='320px' height='320px' >
+            <video src='../".$location."' controls width='320px' height='320px' >
             <br>
             <span>".$name."</span>
         </div>";
