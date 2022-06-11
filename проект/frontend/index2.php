@@ -1,5 +1,5 @@
 <?php
-include("./config.php");
+include("../config/config.php");
  
 if(isset($_POST['but_upload'])){
    $maxsize = 26214400; // 25MB
