@@ -55,14 +55,15 @@ include("../config.php");
         while($row = mysqli_fetch_assoc($fetchVideos)){
         $location = $row['location'];
         $name = $row['name'];
+        $subs_name=$row['subs_name'];
+        $subs_location=$row['subs_location'];
         echo 
         "<div class=\"vd\">
         <h1>".$name."</h1>
         <video src='../".$location."' controls width='320px' height='320px' >
-            <track src=\"../goats.vtt\" kind=\"subtitles\" srclang=\"en\" label=\"English\" default> 
+            <track src='../".$subs_name."' kind=\"subtitles\" srclang=\"en\" label=\"English\" default> 
         </video>
             <br>
-            <span>".$name."</span>
         </div>";
         }
         ?>
