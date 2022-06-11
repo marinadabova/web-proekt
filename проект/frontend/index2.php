@@ -1,11 +1,11 @@
 <?php
-include("../config/config.php");
+include("../config.php");
  
 if(isset($_POST['but_upload'])){
    $maxsize = 26214400; // 25MB
    if(isset($_FILES['file']['name']) && $_FILES['file']['name'] != ''){
        $name = $_FILES['file']['name'];
-       $target_dir = "videos/";
+       $target_dir = "../videos/";
        $target_file = $target_dir . $_FILES["file"]["name"];
 
        // Select file type
@@ -37,7 +37,7 @@ if(isset($_POST['but_upload'])){
    }else{
        $_SESSION['message'] = "Please select a file.";
    }
-   header('location: index.php');
+   header('location: ./index.php');
    exit;
 } 
 ?>
@@ -47,8 +47,8 @@ if(isset($_POST['but_upload'])){
     <head>
       <style src="./style.css"></style>
       <video controls >
-       <source type="video/mp4" src="The Three Billy Goats Gruff _ Fairy Tales _ Gigglebox.mp4">
-            <track src="goats.vtt" kind="subtitles" srclang="en" label="English" default> 
+       <source type="video/mp4" src="../The Three Billy Goats Gruff _ Fairy Tales _ Gigglebox.mp4">
+            <track src="../goats.vtt" kind="subtitles" srclang="en" label="English" default> 
       </video>
       
     </head>
