@@ -37,7 +37,7 @@ if(isset($_POST['but_upload'])){
    }else{
        $_SESSION['message'] = "Please select a file.";
    }
-   header('location: ./index.php');
+   header('location: ./upload_video.php');
    exit;
 } 
 ?>
