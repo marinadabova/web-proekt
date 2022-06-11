@@ -19,38 +19,6 @@ include("../config.php");
     
         <?php
 
-        /*$subtitles = Subtitles::load('goats.vtt');
-        $blocks = $subtitles->getInternalFormat(); // array
-
-        foreach ($blocks as $block) {
-            echo $block['start'];
-            echo $block['end'];
-            foreach ($block['lines'] as $line) {
-                echo $line;
-            }
-        } */
-        /*$file = 'goats.vtt'; 
-        $file_as_array = file($file, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-
-        foreach ($file_as_array as $f) {    
-
-        // Find lines containing "-->"  
-        $start_time = false;
-        if (preg_match("/^(\d{2}:[\d\.]+) --> \d{2}:[\d\.]+$/", $f, $match)) {              
-            $start_time = explode('-->', $f);
-            $start_time = $start_time[0];
-            echo '<br>';
-            echo $start_time;
-        }
-
-        // It's a line of the file that doesn't include a timestamp, so it's caption text. Ignore header of file which includes the word 'WEBVTT'
-        if (!$start_time && (!strpos($f, 'WEBVTT')) ) {             
-            echo ' ' . $f . ' ';
-        }   
-
-    }       */
-    
-
         $fetchVideos = mysqli_query($con, "SELECT * FROM db ORDER BY id DESC");
         while($row = mysqli_fetch_assoc($fetchVideos)){
         $location = $row['location'];
