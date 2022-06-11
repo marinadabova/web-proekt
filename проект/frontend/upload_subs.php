@@ -13,7 +13,7 @@ if(isset($_POST['but_upload'])){
        $extension = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 
        // Valid file extensions
-       $extensions_arr = array("vtt,srt");
+       $extensions_arr = array("vtt","srt");
 
        // Check extension
        if( in_array($extension,$extensions_arr) ){
@@ -25,7 +25,8 @@ if(isset($_POST['but_upload'])){
              // Upload
              if(move_uploaded_file($_FILES['file']['tmp_name'],$target_file)){
                // Insert record
-               $query = "INSERT INTO db(subs_name,subs_location) VALUES('".$name."','".$target_file."')";
+               $query = "INSERT INTO db(subs_name,subs_location) VALUES('".$name."','".$target_file."')"; 
+               
 
                mysqli_query($con,$query);
                $_SESSION['message'] = "Upload successfully.";
