@@ -1,5 +1,5 @@
 <?php
-include("config.php");
+include("./config.php");
  
 if(isset($_POST['but_upload'])){
    $maxsize = 26214400; // 25MB
@@ -45,7 +45,7 @@ if(isset($_POST['but_upload'])){
     
 <html>
     <head>
-      <style src="style.css"></style>
+      <style src="./style.css"></style>
       <video controls >
        <source type="video/mp4" src="The Three Billy Goats Gruff _ Fairy Tales _ Gigglebox.mp4">
             <track src="goats.vtt" kind="subtitles" srclang="en" label="English" default> 
@@ -113,6 +113,6 @@ if(isset($_POST['but_upload'])){
         <p id="txt"></p>
         
     </body>
-    <script src="scrpt.js"></script>
+    <script src="./scrpt.js"></script>
 
 </html>
