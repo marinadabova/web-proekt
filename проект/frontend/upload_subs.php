@@ -6,14 +6,14 @@ if(isset($_POST['but_upload'])){
    $maxsize = 26214400; // 25MB
    if(isset($_FILES['file']['name']) && $_FILES['file']['name'] != ''){
        $name = $_FILES['file']['name'];
-       $target_dir = "videos/";
+       $target_dir = "subtitles/";
        $target_file = $target_dir . $_FILES["file"]["name"];
 
        // Select file type
        $extension = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 
        // Valid file extensions
-       $extensions_arr = array("mp4","avi","3gp","mov","mpeg");
+       $extensions_arr = array("vtt");
 
        // Check extension
        if( in_array($extension,$extensions_arr) ){
@@ -25,7 +25,7 @@ if(isset($_POST['but_upload'])){
              // Upload
              if(move_uploaded_file($_FILES['file']['tmp_name'],$target_file)){
                // Insert record
-               $query = "INSERT INTO db(name,location) VALUES('".$name."','".$target_file."')";
+               $query = "INSERT INTO db(subs_name,subs_location) VALUES('".$name."','".$target_file."')";
 
                mysqli_query($con,$query);
                $_SESSION['message'] = "Upload successfully.";
@@ -38,14 +38,14 @@ if(isset($_POST['but_upload'])){
    }else{
        $_SESSION['message'] = "Please select a file.";
    }
-   header('location: upload_video.php');
+   header('location: upload_subs.php');
    exit;
 } 
 ?>
 <!doctype html> 
 <html> 
   <head>
-     <title>Upload and Store video to MySQL Database with PHP</title>
+     <title>Upload subs to MySQL Database with PHP</title>
   </head>
   <body>
 

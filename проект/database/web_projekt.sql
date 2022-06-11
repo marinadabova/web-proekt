@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Време на генериране: 11 юни 2022 в 17:01
+-- Време на генериране: 11 юни 2022 в 17:25
 -- Версия на сървъра: 10.4.22-MariaDB
 -- Версия на PHP: 8.1.2
 
@@ -30,16 +30,18 @@ SET time_zone = "+00:00";
 CREATE TABLE `db` (
   `id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
-  `location` varchar(255) NOT NULL
+  `location` varchar(255) NOT NULL,
+  `subs_name` varchar(255) NOT NULL,
+  `subs_location` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Схема на данните от таблица `db`
 --
 
-INSERT INTO `db` (`id`, `name`, `location`) VALUES
-(1, 'The Three Billy Goats Gruff', 'videos/The Three Billy Goats Gruff.mp4'),
-(2, 'Bedtime for Gus', 'videos/Bedtime for Gus.mp4');
+INSERT INTO `db` (`id`, `name`, `location`, `subs_name`, `subs_location`) VALUES
+(1, 'The Three Billy Goats Gruff', 'videos/The Three Billy Goats Gruff.mp4', '', ''),
+(2, 'Bedtime for Gus', 'videos/Bedtime for Gus.mp4', '', '');
 
 --
 -- Indexes for dumped tables

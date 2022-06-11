@@ -58,8 +58,9 @@ include("../config.php");
         echo 
         "<div class=\"vd\">
         <h1>".$name."</h1>
-
-            <video src='../".$location."' controls width='320px' height='320px' >
+        <video src='../".$location."' controls width='320px' height='320px' >
+            <track src=\"../goats.vtt\" kind=\"subtitles\" srclang=\"en\" label=\"English\" default> 
+        </video>
             <br>
             <span>".$name."</span>
         </div>";
