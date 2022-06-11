@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Време на генериране: 11 юни 2022 в 19:59
+-- Време на генериране: 11 юни 2022 в 21:44
 -- Версия на сървъра: 10.4.22-MariaDB
 -- Версия на PHP: 8.1.2
 
@@ -40,7 +40,7 @@ CREATE TABLE `db` (
 --
 
 INSERT INTO `db` (`id`, `name`, `location`, `subs_name`, `subs_location`) VALUES
-(1, 'The Three Billy Goats Gruff', 'videos/The Three Billy Goats Gruff.mp4', 'The Three Billy Goats Gruff.vtt', '..subtitles/The Three Billy Goats Gruff.vtt'),
+(1, 'The Three Billy Goats Gruff', 'videos/The Three Billy Goats Gruff.mp4', 'The Three Billy Goats Gruff.vtt', '../subtitles/The Three Billy Goats Gruff.vtt'),
 (2, 'Bedtime for Gus', 'videos/Bedtime for Gus.mp4', 'Bedtime-For-Gus.vtt', '../subtitles/Bedtime-For-Gus.vtt');
 
 --

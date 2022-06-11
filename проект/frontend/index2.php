@@ -5,7 +5,7 @@ include("../config.php");
     
 <html>
     <head>
-        <title> Video Anotation</title>
+        <title> Video</title>
         <link rel="stylesheet" href="./style.css">
         <p id="txt"></p>
         <h1>The Three Billy Goats Gruff</h1>
@@ -20,7 +20,7 @@ include("../config.php");
     
         <?php
 
-        $fetchVideos = mysqli_query($con, "SELECT * FROM db ORDER BY id DESC");
+        $fetchVideos = mysqli_query($con, "SELECT * FROM db ORDER BY id ASC");
         while($row = mysqli_fetch_assoc($fetchVideos)){
         $location = $row['location'];
         $name = $row['name'];
