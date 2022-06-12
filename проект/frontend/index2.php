@@ -21,7 +21,7 @@ include("../config.php");
         echo 
         "<div class=\"vd\">
             <h1>".$name."</h1>
-            <video  src='../".$location."' controls >
+            <video  src='../videos/".$location."' controls >
                 <track src='../subtitles/".$subs_name."' kind=\"subtitles\" srclang=\"en\" label=\"English\" default> 
             </video>
             <br>
