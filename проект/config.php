@@ -5,8 +5,7 @@ session_start();
 $host = "localhost"; 
 $user = "root"; 
 $password = ""; 
-$dbname = "web_projekt"; 
-//$dbname = "test_subs"; 
+$dbname = "video_db"; 
 
 
 $con = mysqli_connect($host, $user, $password,$dbname);

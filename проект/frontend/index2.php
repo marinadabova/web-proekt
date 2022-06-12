@@ -22,10 +22,10 @@ include("../config.php");
 
         $fetchVideos = mysqli_query($con, "SELECT * FROM db ORDER BY id ASC");
         while($row = mysqli_fetch_assoc($fetchVideos)){
-        $location = $row['location'];
-        $name = $row['name'];
+        $location = $row['video_location'];
+        $name = $row['video'];
         $id=$row['id'];
-        $subs_name=$row['subs_name'];
+        $subs_name=$row['subs'];
         $subs_location=$row['subs_location'];
         echo 
         "<div class=\"vd\">

@@ -25,7 +25,7 @@ if(isset($_POST['but_upload'])){
              // Upload
              if(move_uploaded_file($_FILES['file']['tmp_name'],$target_file)){
                // Insert record
-               $query = "UPDATE db SET subs_name='".$name."',subs_location='".$target_file."' 
+               $query = "UPDATE db SET subs='".$name."',subs_location='".$target_file."' 
                WHERE id=".$_GET["id"].";";
 
                mysqli_query($con,$query);
