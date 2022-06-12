@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Време на генериране: 12 юни 2022 в 22:13
+-- Време на генериране: 12 юни 2022 в 22:21
 -- Версия на сървъра: 10.4.22-MariaDB
 -- Версия на PHP: 8.1.2
 
@@ -40,7 +40,8 @@ CREATE TABLE `db` (
 --
 
 INSERT INTO `db` (`id`, `video`, `video_location`, `subs`, `subs_location`) VALUES
-(1, 'The Three Billy Goats Gruff.mp4', '../videos/The Three Billy Goats Gruff.mp4', '', '');
+(1, 'The Three Billy Goats Gruff.mp4', '../videos/The Three Billy Goats Gruff.mp4', 'The Three Billy Goats Gruff.vtt', '../subtitles/The Three Billy Goats Gruff.vtt'),
+(2, 'Bedtime for Gus.mp4', '../videos/Bedtime for Gus.mp4', 'Bedtime For Gus.vtt', '../subtitles/Bedtime For Gus.vtt');
 
 --
 -- Indexes for dumped tables
@@ -60,7 +61,7 @@ ALTER TABLE `db`
 -- AUTO_INCREMENT for table `db`
 --
 ALTER TABLE `db`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
