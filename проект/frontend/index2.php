@@ -7,7 +7,8 @@ include("../config.php");
     <head>
         <title> Video Annotation</title>
         <link rel="stylesheet" href="./style.css">
-    </head>
+    
+ </head>
     <body>
         <a id="upload_vedo" href="upload_video.php" class="href-btn">
              Upload video
@@ -33,6 +34,6 @@ include("../config.php");
         }
         ?>
     </body>
-    <script src="./scrpt.js"></script>
+   <!--<script src="./script.js"></script>
 
 </html>
