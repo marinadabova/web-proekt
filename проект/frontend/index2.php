@@ -11,6 +11,11 @@ include("../config.php");
     <body>
         <div>
         <?php
+        echo
+        "<a href=\"upload_video.php\" class=\"href-btn\">
+             Upload video
+        </a>";
+
         $fetchVideos = mysqli_query($con, "SELECT * FROM db ORDER BY id ASC");
         while($row = mysqli_fetch_assoc($fetchVideos)){
         $location = $row['video_location'];
