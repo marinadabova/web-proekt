@@ -25,8 +25,8 @@ if(isset($_POST['but_upload'])){
              // Upload
              if(move_uploaded_file($_FILES['file']['tmp_name'],$target_file)){
                // Insert record
-               $query = "INSERT INTO db(subs_name,subs_location) VALUES('".$name."','".$target_file."')"; 
-               
+               $query = "UPDATE db SET subs_name='".$name."',subs_location='".$target_file."' 
+               WHERE id=".$_GET["id"].";";
 
                mysqli_query($con,$query);
                $_SESSION['message'] = "Upload successfully.";
@@ -61,6 +61,8 @@ if(isset($_POST['but_upload'])){
       <input type='file' name='file' />
       <input type='submit' value='Upload' name='but_upload'>
     </form>
-
+    <?php
+   echo $_GET["id"];
+    ?>
   </body>
 </html>

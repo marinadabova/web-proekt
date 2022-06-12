@@ -24,6 +24,7 @@ include("../config.php");
         while($row = mysqli_fetch_assoc($fetchVideos)){
         $location = $row['location'];
         $name = $row['name'];
+        $id=$row['id'];
         $subs_name=$row['subs_name'];
         $subs_location=$row['subs_location'];
         echo 
@@ -33,6 +34,7 @@ include("../config.php");
             <track src='../subtitles/".$subs_name."' kind=\"subtitles\" srclang=\"en\" label=\"English\" default> 
         </video>
             <br>
+            <a href=\"upload_subs.php?id=".$id."\">upload subs</a>
         </div>";
         }
         ?>
