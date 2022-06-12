@@ -30,7 +30,7 @@ include("../config.php");
         "<div class=\"vd\">
         <h1>".$name."</h1>
         <video  src='../".$location."' controls width='320px' height='320px' >
-            <track src='../".$subs_name."' kind=\"subtitles\" srclang=\"en\" label=\"English\" default> 
+            <track src='../subtitles/".$subs_name."' kind=\"subtitles\" srclang=\"en\" label=\"English\" default> 
         </video>
             <br>
         </div>";
