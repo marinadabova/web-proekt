@@ -30,6 +30,10 @@ include("../config.php");
             <a href=\"upload_subs.php?id=".$id."\" class=\"href-btn\">
                 Upload subtitles
             </a>
+
+            <a href=\"download_subs.php?id=".$id."\" class=\"href-btn\">
+            Download subtitles
+        </a>
         </div>";
         }
         ?>
