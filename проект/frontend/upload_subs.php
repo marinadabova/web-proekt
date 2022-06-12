@@ -9,22 +9,16 @@ if(isset($_POST['but_upload'])){
        $target_dir = "../subtitles/";
        $target_file = $target_dir . $_FILES["file"]["name"];
 
-       // Select file type
        $extension = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 
-       // Valid file extensions
        $extensions_arr = array("vtt","srt");
 
-       // Check extension
        if( in_array($extension,$extensions_arr) ){
  
-          // Check file size
           if(($_FILES['file']['size'] >= $maxsize) || ($_FILES["file"]["size"] == 0)) {
              $_SESSION['message'] = "File too large. File must be less than 25MB.";
           }else{
-             // Upload
              if(move_uploaded_file($_FILES['file']['tmp_name'],$target_file)){
-               // Insert record
                $query = "UPDATE db SET subs='".$name."',subs_location='".$target_file."' 
                WHERE id=".$_GET["id"].";";
 
@@ -46,11 +40,10 @@ if(isset($_POST['but_upload'])){
 <!doctype html> 
 <html> 
   <head>
-     <title>Upload subs to MySQL Database with PHP</title>
+     <title>Upload subs </title>
   </head>
   <body>
 
-    <!-- Upload response -->
     <?php 
     if(isset($_SESSION['message'])){
        echo $_SESSION['message'];
@@ -61,8 +54,6 @@ if(isset($_POST['but_upload'])){
       <input type='file' name='file' />
       <input type='submit' value='Upload' name='but_upload'>
     </form>
-    <?php
-   echo $_GET["id"];
-    ?>
+   
   </body>
 </html>
