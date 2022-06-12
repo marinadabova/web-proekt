@@ -4,10 +4,12 @@ body, html {
     margin: 0px;
 }
 
-video,.vd{
+video {
     border: 1px solid #aaa;
     margin: auto;
+    margin-bottom: 20px ;
     display: block;
+    width: 70%;
  }
  /*.vd{
    float: left; margin-right: 5px;
@@ -23,7 +25,8 @@ video,.vd{
     padding-bottom: 30px;
     text-align: center;
     color: #EEEEEE;
-    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
  }
 
  section{
@@ -32,5 +35,14 @@ video,.vd{
     padding-bottom: 30px ;
     background-color:#EEEEEE;
     display: inline-block;
-    margin: 0;
+    margin: auto;
+ }
+
+ .href-btn{
+   background-color: #00ADB5;
+   color: white;
+   padding: 15px 25px;
+   margin: 30px;
+   text-decoration: none;
+   border: 1px solid #EEEEEE;
  }
