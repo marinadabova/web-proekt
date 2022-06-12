@@ -9,13 +9,10 @@ include("../config.php");
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
-        <div>
-        <?php
-        echo
-        "<a href=\"upload_video.php\" class=\"href-btn\">
+        <a id="upload_vedo" href="upload_video.php" class="href-btn">
              Upload video
-        </a>";
-
+        </a>
+        <?php
         $fetchVideos = mysqli_query($con, "SELECT * FROM db ORDER BY id ASC");
         while($row = mysqli_fetch_assoc($fetchVideos)){
         $location = $row['video_location'];
@@ -29,11 +26,9 @@ include("../config.php");
             <video  src='../videos/".$location."' controls >
                 <track src='../subtitles/".$subs_name."' kind=\"subtitles\" srclang=\"en\" label=\"English\" default> 
             </video>
-            <br>
             <a href=\"upload_subs.php?id=".$id."\" class=\"href-btn\">
                 Upload subtitles
             </a>
-            <br>
         </div>";
         }
         ?>

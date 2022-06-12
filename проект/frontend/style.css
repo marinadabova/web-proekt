@@ -25,18 +25,9 @@ h1{
    padding-bottom: 30px;
    text-align: center;
    color: #EEEEEE;
-   margin-top: 30px;
    margin-bottom: 30px;
 }
 
-section{
-   width: 100%;
-   padding-top: 30px;
-   padding-bottom: 30px ;
-   background-color:#EEEEEE;
-   display: inline-block;
-   margin: auto;
-}
 
 .href-btn{
   background-color: #00ADB5;
@@ -45,4 +36,6 @@ section{
   margin: 30px;
   text-decoration: none;
   border: 1px solid #EEEEEE;
+  display: inline-block;
 }
+
