@@ -38,6 +38,6 @@ include("../backend/db/config.php");
         }
         ?>
     </body>
-   <!--<script src="./script.js"></script>
+   <!--<script src="./script.js"></script>-->
 
 </html>
