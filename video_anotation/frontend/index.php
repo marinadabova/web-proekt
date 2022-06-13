@@ -10,7 +10,7 @@ include("../backend/db/config.php");
     
  </head>
     <body>
-        <a id="upload_vedo" href="upload_video.php" class="href-btn">
+        <a id="upload_vedo" href="../backend/upload_video.php" class="href-btn">
              Upload video
         </a>
         <?php
@@ -27,11 +27,11 @@ include("../backend/db/config.php");
             <video  src='../videos/".$location."' controls >
                 <track src='../subtitles/".$subs_name."' kind=\"subtitles\" srclang=\"en\" label=\"English\" default> 
             </video>
-            <a href=\"upload_subs.php?id=".$id."\" class=\"href-btn\">
+            <a href=\"../backend/upload_subs.php?id=".$id."\" class=\"href-btn\">
                 Upload subtitles
             </a>
 
-            <a href=\"download_subs.php?id=".$id."\" class=\"href-btn\">
+            <a href=\"../backend/download_subs.php?id=".$id."\" class=\"href-btn\">
             Download subtitles
         </a>
         </div>";
