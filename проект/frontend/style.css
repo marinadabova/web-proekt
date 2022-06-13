@@ -11,9 +11,7 @@ video {
    display: block;
    width: 70%;
 }
-/*.vd{
-  float: left; margin-right: 5px;
-}*/
+
 ::cue {
    font-size: 12px;
 }
@@ -27,7 +25,6 @@ h1{
    color: #EEEEEE;
    margin-bottom: 30px;
 }
-
 
 .href-btn{
   background-color: #00ADB5;
